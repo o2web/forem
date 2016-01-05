@@ -1,9 +1,15 @@
+## New maintainer required
+
+**I am currently looking for a new maintainer for this gem. I am no longer doing any more work on this myself. Please contact me@ryanbigg.com if you'd like to take over this project.**
+
 ![Forem - using Bootstrap](https://raw.githubusercontent.com/radar/forem/rails4/doc/theme.png)
 
 *Forem, using the forem-bootstrap theme*
 
-# Forem [![Build status](https://api.travis-ci.org/radar/forem.png)](https://travis-ci.org/radar/forem)
+# Forem [![Build Status](https://travis-ci.org/rubysherpas/forem.svg)](https://travis-ci.org/rubysherpas/forem)
 *"NO U!"*
+
+
 
 Forem is an engine for Rails that aims to be the best little forum system ever.
 The end goal is to have an engine that can be dropped into an application that
@@ -180,6 +186,7 @@ The exact same format can be used to redefine an existing method.
 
 We currently have support for the following languages:
 
+* Arabic
 * Brazillian (pt-BR)
 * Bulgarian
 * Chinese (Simplified, zh-CN)
