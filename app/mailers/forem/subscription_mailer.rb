@@ -7,7 +7,7 @@ module Forem
       @post = Post.find(post_id)
       @user = Forem.user_class.find(subscriber_id)
       @topic = @post.topic
-      @token = Forem::Subscription.find_by(subscriber_id: subscriber_id, topic: @topic).token
+      @token = @topic.subscription_for(subscriber_id).token
 
       mail(:to => @user.email, :subject => I18n.t('forem.topic.received_reply'))
     end
