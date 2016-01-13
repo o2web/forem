@@ -6,6 +6,8 @@ module Forem
       # only pass id to make it easier to send emails using resque
       @post = Post.find(post_id)
       @user = Forem.user_class.find(subscriber_id)
+      @topic = @post.topic
+      @token = Forem::Subscription.find_by(subscriber_id: subscriber_id, topic: @topic)
 
       mail(:to => @user.email, :subject => I18n.t('forem.topic.received_reply'))
     end
